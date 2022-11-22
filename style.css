@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #e2e9f9;
+  display: grid;
+  place-items: center;
+  padding: 3rem;
+  color: #242e4c;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+  background-color: #ffff;
+  width: 100%;
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.container h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.header {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header input {
+  padding: 0.5rem;
+  outline: none;
+}
+.header .categories {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories .active {
+  background-color: #87a0ce;
+  color: #ffff;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+.users .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.user.act {
+  border: 1px solid #c6ccdb;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.075);
+}
+.user img {
+  width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.user-info .name {
+  font-size: 1rem;
+}
+.user-info .address {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.user-info .tags span {
+  border: 1px solid #c6ccdb;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.7rem;
+  border-radius: 10px;
+}
